@@ -1,0 +1,66 @@
+@use './colors' as *;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Inter', sans-serif;
+	height: 100vh;
+	background-color: $black;
+}
+.social-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 2em 3em;
+	background-color: $dark-grey;
+	border-radius: 10px;
+	.profile-img {
+        height: 140px;
+		border-radius: 50%;
+		padding: 1em;
+	}
+	.name {
+		color: $white;
+	}
+	.home {
+		color: $green;
+		padding: 1em 0;
+		font-size: 1.4rem;
+        font-weight: bold;
+	}
+	.about-info {
+		color: $white;
+		padding: 1em 0;
+		font-size: 1.5rem;
+	}
+	a {
+		margin-top: 1em;
+		padding: 1em;
+		background-color: $grey;
+		width: 100%;
+		text-align: center;
+		border-radius: 8px;
+		text-decoration: none;
+		color: $white;
+		font-size: 1.4rem;
+		transition: background-color .3s;
+	}
+	a:hover {
+		background-color: $green;
+		color: $black;
+	}
+}
+@media (min-width: 992px){
+    .social-container{
+        padding: 3em 5em;
+    }
+}
